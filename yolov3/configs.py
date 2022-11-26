@@ -37,7 +37,7 @@ if YOLO_TYPE                == "yolov3":
 TRAIN_YOLO_TINY             = True
 TRAIN_SAVE_BEST_ONLY        = True # saves only best model according validation loss (True recommended)
 TRAIN_SAVE_CHECKPOINT       = False # saves all best validated checkpoints in training process (may require a lot disk space) (False recommended)
-TRAIN_CLASSES               = "IMAGES/train/class.names"
+TRAIN_CLASSES               = "config/class.names"
 TRAIN_ANNOT_PATH            = "IMAGES/train/train.txt"
 TRAIN_LOGDIR                = "log"
 TRAIN_CHECKPOINTS_FOLDER    = ""
