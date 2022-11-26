@@ -91,7 +91,7 @@ def Load_Yolo_model():
             yolo = Create_Yolo(input_size=YOLO_INPUT_SIZE, CLASSES=YOLO_COCO_CLASSES)
             load_yolo_weights(yolo, Darknet_weights) # use Darknet weights
         else:
-            checkpoint = f"./checkpoints/Tiny/{SAVED_MODEL_NAME}"
+            checkpoint = f"./{SAVED_MODEL_NAME}"
             if TRAIN_YOLO_TINY:
                 checkpoint += "_Tiny"
             print("Loading custom weights from:", checkpoint)
